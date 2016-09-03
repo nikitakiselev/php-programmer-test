@@ -84,7 +84,7 @@ I've prepared a some examples for testing from browser:
 [http://localhost:8888?site=https://nikitakiselev.ru/sitemap.xml](http://localhost:8888?site=https://nikitakiselev.ru/sitemap.xml)
 
 **BBCODE**
-[http://localhost:8888?site=https://nikitakiselev.ru/sitemap.xml&type=bbcode][http://localhost:8888?site=https://nikitakiselev.ru/sitemap.xml&type=bbcode]
+[http://localhost:8888?site=https://nikitakiselev.ru/sitemap.xml&type=bbcode](http://localhost:8888?site=https://nikitakiselev.ru/sitemap.xml&type=bbcode)
 
 ## Console
 
