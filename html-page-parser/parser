@@ -1,0 +1,17 @@
+#!/usr/bin/env php
+<?php
+
+// bootstrap the application
+$config = require __DIR__."/bootstrap/application.php";
+
+use App\Parser;
+use App\ContentReceiver;
+use App\Console\Console;
+
+$content = ContentReceiver::fromUrl($argv[1]);
+
+$elements = Parser::factory($content, $argv[2] ?? 'html')->elements();
+
+Console::labeled("Elements total:", $elements->count());
+Console::labeled("Unique elements count:", $elements->unique('name')->count());
+Console::labeled("Elements list:", $elements->unique('name')->inline());
