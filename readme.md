@@ -1,3 +1,5 @@
+[TOC]
+
 # Installation instructions
 
 Clone repository:
@@ -45,7 +47,7 @@ composer install
 php -S localhost:8888 -t public/
 ```
 
-Locate to `http://localhost:8888` in your browser.
+Locate to [http://localhost:8888](http://localhost:8888) in your browser.
 
 The default url for parse was defined in application config file `config/app.php`
 
@@ -78,24 +80,25 @@ You can can change them or pass your own custom parameters to the script via GET
 I've prepared a some examples for testing from browser:
 
 **HTML**
-[http://localhost:8888?site=https://nikitakiselev.ru](http://localhost:8888?site=https://nikitakiselev.ru)
+http://localhost:8888?site=https://nikitakiselev.ru
 
 **XML**
-[http://localhost:8888?site=https://nikitakiselev.ru/sitemap.xml](http://localhost:8888?site=https://nikitakiselev.ru/sitemap.xml)
+http://localhost:8888?site=https://nikitakiselev.ru/sitemap.xml
 
 **BBCODE**
-[http://localhost:8888?site=https://nikitakiselev.ru/sitemap.xml&type=bbcode](http://localhost:8888?site=https://nikitakiselev.ru/sitemap.xml&type=bbcode)
+http://localhost:8888?site=https://nikitakiselev.ru/sitemap.xml&type=bbcode
 
 ## Console
 
 You can run application from the command line, like this:
 
 ```Shell
-php parser [url] [content_type]
+php parser [url] [parser]
 ```
 
 **url** - url for parsing content
-**type** - parser name, which parse the content
+
+**parser** - parser name, which parse the content
 
 ```Shell
 php parser https://nikitakiselev.ru
