@@ -5,7 +5,7 @@
 Clone repository:
 
 ```Shell
-https://github.com/nikitakiselev/php-programmer-test.git
+git clone https://nikitakiselev@bitbucket.org/nikitakiselev/php-programmer-test.git
 cd php-programmer-test
 ```
 
