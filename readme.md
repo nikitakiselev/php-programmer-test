@@ -80,13 +80,13 @@ You can can change them or pass your own custom parameters to the script via GET
 I've prepared a some examples for testing from browser:
 
 **HTML**
-http://localhost:8888?site=https://nikitakiselev.ru
+[http://localhost:8888?site=https://nikitakiselev.ru](http://localhost:8888?site=https://nikitakiselev.ru)
 
 **XML**
-http://localhost:8888?site=https://nikitakiselev.ru/sitemap.xml
+[http://localhost:8888?site=https://nikitakiselev.ru/sitemap.xml](http://localhost:8888?site=https://nikitakiselev.ru/sitemap.xml)
 
 **BBCODE**
-http://localhost:8888?site=https://nikitakiselev.ru/sitemap.xml&type=bbcode
+[http://localhost:8888?site=https://nikitakiselev.ru/sitemap.xml&type=bbcode](http://localhost:8888?site=https://nikitakiselev.ru/sitemap.xml&type=bbcode)
 
 ## Console
 
