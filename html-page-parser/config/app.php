@@ -7,7 +7,7 @@ return [
      */
     'default_url' => 'https://nikitakiselev.ru',
 
-    /**
+    /*
      * Default parsing content type
      *
      * Supported: "html", "bbcode"

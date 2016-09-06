@@ -5,9 +5,10 @@ namespace App;
 class ContentReceiver
 {
     /**
-     * Get content from url
+     * Get content from url.
      *
      * @param string $url
+     *
      * @return string
      */
     public static function fromUrl(string $url)

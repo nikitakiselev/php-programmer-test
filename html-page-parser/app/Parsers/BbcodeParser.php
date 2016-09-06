@@ -2,11 +2,11 @@
 
 namespace App\Parsers;
 
-use App\Support\Collection;
-use App\Elements\BBCodeElement;
 use App\Contracts\ParserContract;
+use App\Elements\BBCodeElement;
+use App\Support\Collection;
 
-class BBCodeParser implements ParserContract
+class BbcodeParser implements ParserContract
 {
     /**
      * @var string
@@ -22,7 +22,7 @@ class BBCodeParser implements ParserContract
     }
 
     /**
-     * Get all bbcode elements
+     * Get all bbcode elements.
      *
      * @return Collection
      */
@@ -30,7 +30,7 @@ class BBCodeParser implements ParserContract
     {
         if ($elements = $this->parse($this->content)) {
             return Collection::collect($elements)
-                ->map(function($element) {
+                ->map(function ($element) {
                     return new BBCodeElement($element);
                 });
         }
@@ -39,9 +39,10 @@ class BBCodeParser implements ParserContract
     }
 
     /**
-     * Find bbcode elements
+     * Find bbcode elements.
      *
      * @param string $content
+     *
      * @return array
      */
     protected function parse(string $content)

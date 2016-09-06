@@ -2,9 +2,9 @@
 
 namespace App\Parsers;
 
-use App\Support\Collection;
-use App\Elements\HtmlDomElement;
 use App\Contracts\ParserContract;
+use App\Elements\HtmlDomElement;
+use App\Support\Collection;
 
 class HtmlParser implements ParserContract
 {
@@ -22,7 +22,7 @@ class HtmlParser implements ParserContract
     }
 
     /**
-     * Get all html elements
+     * Get all html elements.
      *
      * @return Collection
      */
@@ -31,15 +31,16 @@ class HtmlParser implements ParserContract
         $elements = $this->parse($this->content);
 
         return Collection::collect($elements)
-            ->map(function($element) {
+            ->map(function ($element) {
                 return new HtmlDomElement($element);
             });
     }
 
     /**
-     * Parse html content
+     * Parse html content.
      *
      * @param string $html
+     *
      * @return array
      */
     protected function parse(string $html)
