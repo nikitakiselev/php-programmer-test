@@ -20,7 +20,7 @@ class HtmlDomElement implements ElementContract
     }
 
     /**
-     * Get element name
+     * Get element name.
      *
      * @return string
      */
@@ -28,6 +28,6 @@ class HtmlDomElement implements ElementContract
     {
         preg_match('/<\w+/', $this->html, $matches);
 
-        return str_replace("<", '', $matches[0]);
+        return str_replace('<', '', $matches[0]);
     }
 }

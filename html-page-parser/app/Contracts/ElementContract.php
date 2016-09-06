@@ -5,7 +5,7 @@ namespace App\Contracts;
 interface ElementContract
 {
     /**
-     * Get element name
+     * Get element name.
      *
      * @return string
      */

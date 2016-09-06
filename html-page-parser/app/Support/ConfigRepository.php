@@ -18,10 +18,11 @@ class ConfigRepository
     }
 
     /**
-     * Get config value
+     * Get config value.
      *
-     * @param string $key
+     * @param string     $key
      * @param mixed|null $default
+     *
      * @return mixed|null
      */
     public function get(string $key, $default = null)

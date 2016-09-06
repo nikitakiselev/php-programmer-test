@@ -5,7 +5,7 @@ namespace App\Contracts;
 interface ParserContract
 {
     /**
-     * Get elements collection
+     * Get elements collection.
      *
      * @return \App\Support\Collection
      */
